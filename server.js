@@ -1579,6 +1579,64 @@ app.get("/teacherViewResult", async (req, res) => {
 
 /*----------End of Teacher Dashboard  get method----------*/
 
+app.post("/changePassMethod", async (req, res) => {
+  const dataReceived = req.body;
+  console.log(dataReceived);
+  id = req.session.idN;
+  if (dataReceived.newPassword != dataReceived.confirmPassword) {
+    const alertMessage = "Confirm Password does not match!"; // Change the message as needed
+
+    res.send(
+      `<script>window.alert("${alertMessage}"); window.history.back();</script>`
+    );
+  }
+  
+  else {
+    let hashedPW = await bcrypt.hash(dataReceived.newPassword, 2);
+    if (id[0] === 'S') {
+      console.log(id + "Inside Student pass change");
+      await run(`
+      DECLARE
+      BEGIN
+      public_package.logged_in_id := '${id}';
+      UPDATE PROJECTDBA.STUDENT
+      SET PASSWORD='${hashedPW}'
+      WHERE STUDENT_ID='${id}';
+      END;
+     `);
+    }
+    if (id[0] === 'T') {
+      console.log(id + "Inside Teacher pass change");
+      await run(`
+      DECLARE
+      BEGIN
+      public_package.logged_in_id := '${id}';
+      UPDATE PROJECTDBA.TEACHER
+      SET PASSWORD='${hashedPW}'
+      WHERE TEACHER_ID='${id}';
+      END;
+     `);
+    }
+    if (id[0] === 'A') {
+      console.log(id + "Inside Admin pass change");
+      await run(`
+      DECLARE
+      BEGIN
+      public_package.logged_in_id := '${id}';
+      UPDATE PROJECTDBA.ADMIN
+      SET PASSWORD='${hashedPW}'
+      WHERE ID='${id}';
+      END;
+     `);
+    }
+    const alertMessage = "Password Changed ! Click Ok to go to previous page"; // Change the message as needed
+
+    res.send(
+      `<script>window.alert("${alertMessage}"); window.history.back();</script>`
+    );
+  }
+});
+
 //LoginPage
 app.get("/", async (req, res) => {
   req.session.auth = false;

@@ -27,7 +27,18 @@
                     </div>
                     <div class="card-body">
                         <form action="/changePassMethod" method="POST">
-
+                            <div class="form-group">
+                                <label for="currentPassword">Current Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="currentPassword"
+                                        name="currentPassword" required>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary show-hide-password" type="button">
+                                            <i class="fa fa-eye-slash"></i>Show
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="newPassword">New Password</label>
                                 <div class="input-group">

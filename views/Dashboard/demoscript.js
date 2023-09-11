@@ -246,16 +246,16 @@ informationDiv.addEventListener("click", async function (event) {
   }
 
   //password change
-  if (event.target && event.target.id === "changePassSubmitButton") {
-    //event.preventDefault();
-    console.log("Clicked change pass inside dashboard");
-    const confirmPasswordMatch = document.getElementById(
-      "confirmPasswordMatch"
-    );
-    confirmPasswordMatch.innerHTML = "";
-    const currentPassword = document.getElementById("currentPassword");
-    const newPassword = document.getElementById("newPassword");
-    const confirmPassword = document.getElementById("confirmPassword");
+  // if (event.target && event.target.id === "changePassSubmitButton") {
+  //   //event.preventDefault();
+  //   console.log("Clicked change pass inside dashboard");
+  //   const confirmPasswordMatch = document.getElementById(
+  //     "confirmPasswordMatch"
+  //   );
+  //   confirmPasswordMatch.innerHTML = "";
+  //   const currentPassword = document.getElementById("currentPassword");
+  //   const newPassword = document.getElementById("newPassword");
+  //   const confirmPassword = document.getElementById("confirmPassword");
     /*const showHidePasswordButtons = document.querySelectorAll('.show-hide-password');
     const passwordInputs = document.querySelectorAll('input[type="password"]');
 
@@ -271,11 +271,11 @@ informationDiv.addEventListener("click", async function (event) {
         passwordInputs[index].value = passwordInputs[index].value;
       });
     });*/
-    console.log(currentPassword.value);
-    console.log(newPassword.value);
-    console.log(confirmPassword.value);
-    if (newPassword.value != confirmPassword.value) {
-      confirmPasswordMatch.innerHTML = "Confirm your new password correctly!";
-    }
-  }
+    // console.log(currentPassword.value);
+    // console.log(newPassword.value);
+    // console.log(confirmPassword.value);
+    // if (newPassword.value != confirmPassword.value) {
+    //   confirmPasswordMatch.innerHTML = "Confirm your new password correctly!";
+    // }
+  // }
 });
