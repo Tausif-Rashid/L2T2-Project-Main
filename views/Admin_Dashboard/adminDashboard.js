@@ -11,6 +11,7 @@ const log_out = document.getElementById("logout");
 const notice = document.getElementById("notice");
 const Profile = document.getElementById("Profile");
 const about = document.getElementById("about");
+const changePass = document.getElementById("changePass");
 const adminApprovePendingRequests = document.getElementById(
   "adminApprovePendingRequests"
 );
@@ -20,6 +21,19 @@ let year;
 let deptOfferedforExam;
 let level_termforExam;
 
+
+changePass.addEventListener("click", async function () {
+  //This will be request to server and response from server
+  //code
+  console.log("Change pass clicked");
+  try {
+    const response = await fetch(`/changePass`);
+    const contents = await response.text(); // Await the response text
+    informationDiv.innerHTML = contents;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+});
 //adminProfile
 home.addEventListener("click", async function () {
   const response = await fetch(`/adminProfile`);

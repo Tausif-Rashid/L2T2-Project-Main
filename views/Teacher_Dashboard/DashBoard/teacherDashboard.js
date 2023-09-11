@@ -13,9 +13,24 @@ const editTeacherInfo = document.getElementById("editTeacherInfo");
 const insertResult = document.getElementById("insertResult");
 const about = document.getElementById("about");
 const viewResult = document.getElementById("viewResult");
+const changePass = document.getElementById("changePass");
 let STUDENT_ID_FOR_APPROVE = null;
 let courseIDForResult;
 let studentIDForResult;
+
+changePass.addEventListener("click", async function () {
+  //This will be request to server and response from server
+  //code
+  console.log("Change pass clicked");
+  try {
+    const response = await fetch(`/changePass`);
+    const contents = await response.text(); // Await the response text
+    teacherInformationDiv.innerHTML = contents;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+});
+
 
 viewFullInfo.addEventListener("click", async function () {
   console.log("Profile Clicked");

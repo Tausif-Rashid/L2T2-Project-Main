@@ -243,7 +243,7 @@ app.post("/complaintsSubmit", async (req, res) => {
   console.log("inserted");
   //location.reload();
 
-  //res.redirect("/"); // relevant redirect here
+ 
 });
 
 app.get("/about", async (req, res) => {
@@ -1577,45 +1577,3 @@ app.get("/", async (req, res) => {
   res.render("LoginPage/index");
 });
 
-//hash funtions for updating tables
-// async function hasher() {
-//   console.log("called");
-
-//   let id = await run(`SELECT ID,PASSWORD FROM ADMIN`);
-//   for (let i = 0; i < id.rows.length; i++) {
-//     console.log(id.rows[i].PASSWORD);
-//     let hashed = await bcrypt.hash(id.rows[i].PASSWORD, 2);
-
-//     await run(`UPDATE PROJECTDBA.ADMIN
-//      SET PASSWORD='${hashed}'
-//      WHERE ID='${id.rows[i].ID}'`);
-//   }
-// }
-// async function hasher2() {
-//   console.log("called2");
-
-//   let id = await run(`SELECT TEACHER_ID,PASSWORD FROM TEACHER`);
-//   for (let i = 0; i < id.rows.length; i++) {
-//     console.log(id.rows[i].PASSWORD);
-//     let hashed = await bcrypt.hash(id.rows[i].PASSWORD, 2);
-
-//     await run(`UPDATE PROJECTDBA.TEACHER
-//      SET PASSWORD='${hashed}'
-//      WHERE TEACHER_ID='${id.rows[i].TEACHER_ID}'`);
-//   }
-//   console.log("FINISHED HASHING TEACHER");
-// }
-// async function hasher3() {
-//   console.log("called3");
-
-//   let id = await run(`SELECT STUDENT_ID,PASSWORD FROM STUDENT`);
-//   for (let i = 0; i < id.rows.length; i++) {
-//     console.log(id.rows[i].PASSWORD);
-//     let hashed = await bcrypt.hash(id.rows[i].PASSWORD, 2);
-
-//     await run(`UPDATE PROJECTDBA.STUDENT
-//      SET PASSWORD='${hashed}'
-//      WHERE STUDENT_ID='${id.rows[i].STUDENT_ID}'`);
-//   }
-//   console.log("FINISHED HASHING STUDENT");
-// }
