@@ -66,3 +66,10 @@ Admin Credentials:
 id: ```A10``` to ```A14```
 pw: ```pwd12345_1``` to ```pwd12345_5```
 
+Advisor-student pair
+S100349
+123
+
+T1324
+pwd423
+
