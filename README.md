@@ -1,4 +1,3 @@
-#### L2T2-Project-Main
 -L2T2-Project-Group13
 
 # Grades Information System
@@ -10,7 +9,8 @@ GRADES INFORMATION SYSTEM
 A system similar to BIIS , for storing, viewing and updating student information and specially students' grades. View individual, level-wise, course-wise results. Also students can view and enrolled courses , advisors can manage course enrollment. Admin panel for viewing, adding or removing courses, students, notices, exam routines. 
 
 ## ERD
-![Screenshot 2023-09-17 082120](https://github.com/Tausif-Rashid/L2T2-Project-Main/assets/91827238/11882835-b844-4829-81df-21a8b95466de)
+
+![Screenshot 2023-09-17 082945](https://github.com/Tausif-Rashid/L2T2-Project-Main/assets/91827238/68e573a8-bffb-459b-89cc-5a301fb695fd)
 
 ## Stack
 Backend: Nodejs, ExpressJS <br/>
