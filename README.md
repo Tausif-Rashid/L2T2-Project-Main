@@ -13,7 +13,7 @@ A system similar to BIIS , for storing, viewing and updating student information
 ![Screenshot 2023-09-17 082120](https://github.com/Tausif-Rashid/L2T2-Project-Main/assets/91827238/11882835-b844-4829-81df-21a8b95466de)
 
 ## Stack
-Backend: Nodejs, ExpressJS\n
+Backend: Nodejs, ExpressJS 
 Frontend: HTML, CSS EJS
 
 ## Fetaures
