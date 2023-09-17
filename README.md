@@ -1,18 +1,50 @@
-# L2T2-Project-Main
+#### L2T2-Project-Main
 -L2T2-Project-Group13
+
+# Grades Information System
+![Screenshot 2023-09-17 082120](https://github.com/Tausif-Rashid/L2T2-Project-Main/assets/91827238/cf243621-dd52-49e0-94be-251035330ac9)
 
 ## Overview
 
 GRADES INFORMATION SYSTEM
 A system similar to BIIS , for storing, viewing and updating student information and specially students' grades. View individual, level-wise, course-wise results. Also students can view and enrolled courses , advisors can manage course enrollment. Admin panel for viewing, adding or removing courses, students, notices, exam routines. 
 
+## ERD
+![Screenshot 2023-09-17 082120](https://github.com/Tausif-Rashid/L2T2-Project-Main/assets/91827238/11882835-b844-4829-81df-21a8b95466de)
 
----Prerequisites---
+## Stack
+Backend: Nodejs, ExpressJS
+Frontend: HTML, CSS EJS
 
+## Fetaures
+---Student login:
+1) View and Edit information like name, address, etc
+2) View courses : taken, available, completed
+-> Enroll new courses if prerequisites completed
+3) View faculty info table, Advisor info
+4) View Grades :
+	-> Term-wise like BIIS
+	-> Course-wise - TF, CT, Attendance
+---Teacher Login:
+1) View grades:
+	->Section wise
+	->Dept wise
+ -> Course wise
+2) View and change information
+3) View courses taking currently 
+4) View pending results
+---Admin Login 
+1) View all students
+2) View all teachers
+3) View all courses
+4) Add/Remove student , teachers , courses
+5) View info update requests and approve(later)
+6) Keep log of every changes to database and view logs
+
+## Installation
+
+### Prerequisites---
 Oracle 19c, with SQL PLUS, DBeaver/Navicat, NodeJS, VSCode, Any browser. 
-
-
----Installation---
 
 schema creation: 
 Run these commands in SQL PLus:
@@ -37,9 +69,7 @@ Database: ```ORCLPDB```
 Username: ```ProjectDBa```
 Password: ```12345```
 
-Run SQLV3/Createtable.sql file inside dbeaver/navicat.
-Run SQLV3/InsertData sql commands serially.
-Run SQLV3/Functions file serially.
+Run SQL commands inside folder according to readme.txt.
 
 ---Running Project---
 
@@ -72,4 +102,10 @@ S100349
 
 T1324
 pwd423
+
+
+## Project Team
+https://github.com/SajidNoor5051
+https://github.com/Tausif-Rashid
+
 
