@@ -18,14 +18,14 @@ Frontend: HTML, CSS EJS
 
 ## Fetaures
 
-  ---Student login:<br/>
+---Student login:
 1) View and Edit information like name, address, etc
 2) View courses : taken, available, completed
 -> Enroll new courses if prerequisites completed
 3) View faculty info table, Advisor info
 4) View Grades :
 	-> Term-wise like BIIS
-	-> Course-wise - TF, CT, Attendance<br/>
+	-> Course-wise - TF, CT, Attendance
 ---Teacher Login:<br/>
 1) View grades:
 	->Section wise
@@ -33,8 +33,8 @@ Frontend: HTML, CSS EJS
  -> Course wise
 2) View and change information
 3) View courses taking currently 
-4) View pending results<br/>
----Admin Login <br/>
+4) View pending results
+---Admin Login
 1) View all students
 2) View all teachers
 3) View all courses
