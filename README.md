@@ -26,7 +26,8 @@ Frontend: HTML, CSS EJS
 4) View Grades :
 	-> Term-wise like BIIS
 	-> Course-wise - TF, CT, Attendance
----Teacher Login:<br/>
+
+---Teacher Login:
 1) View grades:
 	->Section wise
 	->Dept wise
@@ -34,6 +35,7 @@ Frontend: HTML, CSS EJS
 2) View and change information
 3) View courses taking currently 
 4) View pending results
+
 ---Admin Login
 1) View all students
 2) View all teachers
