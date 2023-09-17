@@ -18,7 +18,7 @@ Frontend: HTML, CSS EJS
 
 ## Fetaures
 
- ---Student login:<br/>
+  ---Student login:<br/>
 1) View and Edit information like name, address, etc
 2) View courses : taken, available, completed
 -> Enroll new courses if prerequisites completed
