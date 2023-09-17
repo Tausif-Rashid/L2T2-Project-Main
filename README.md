@@ -108,7 +108,8 @@ pwd423
 
 
 ## Project Team
-https://github.com/SajidNoor5051
-https://github.com/Tausif-Rashid
+Sajid: https://github.com/SajidNoor5051
+
+Tausif: https://github.com/Tausif-Rashid
 
 
