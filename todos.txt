@@ -1,31 +1,9 @@
 TODO: 
-ERD change: courses table has 2 att: Level_Term , Dept_Offered
-Fill result table for some sample students
-
-
-2.  calculate gpa , next session, rollback session 
-4. Insert more data into enrolls table with status current. 
-
--insert courses add to session
-
-5. Notices table, button and admin side form
-- View final exam routine
-
--Ready Sample student-teacher pairs
-
 
 7. Debug known bugs: 
 If possible:
 -Debug multiuser login
 -Make css more consistent
-
-
-
-
-
-
-
-
 
 Title: Grades Information System
 idea submitted:
